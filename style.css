@@ -7,7 +7,7 @@ a{color:var(--wood)}
 .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
 
 header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}
-.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0;flex-wrap:wrap}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:8px 16px;padding:12px 20px;flex-wrap:wrap}
 .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--dark);font-weight:700;font-size:1.25rem;letter-spacing:.02em}
 .brand img{width:40px;height:40px}
 nav{display:flex;gap:6px;flex-wrap:wrap}
@@ -41,8 +41,10 @@ h2{font-size:1.8rem;margin:0 0 8px}
 .feature h3{margin:0 0 6px}
 .feature p{margin:0;color:var(--muted)}
 
-.page-title{padding:40px 0 0}
+.page-title{padding:40px 20px 0}
 .two{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center}
+.two img{width:100%;height:auto}
+.hero img{width:100%}
 .box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px}
 .box h3{margin-top:0}
 .contact-list{list-style:none;padding:0;margin:0}
@@ -56,7 +58,32 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 footer a{color:#f0c898}
 
 @media(max-width:720px){
-.hero .wrap,.two{grid-template-columns:1fr}
-.hero h1{font-size:1.9rem}
+header{position:static}
+.brand{font-size:1.15rem}
+.brand img{width:34px;height:34px}
+nav{width:100%;justify-content:space-between;gap:2px}
+nav a{flex:1;text-align:center;padding:9px 4px;font-size:.95rem}
+.hero{padding:24px 0}
+.hero .wrap,.two{grid-template-columns:1fr;gap:20px}
+.hero h1{font-size:1.7rem}
+.hero p{font-size:1rem}
+.btn{display:block;text-align:center}
 .btn.ghost{margin:10px 0 0}
+section{padding:28px 0}
+h2{font-size:1.5rem}
+.lead{margin-bottom:20px}
+.grid{grid-template-columns:repeat(2,1fr);gap:12px}
+.card div{padding:12px}
+.card h3{font-size:1rem}
+.card p{font-size:.85rem}
+.feature{padding:12px 4px}
+.feature svg{width:44px;height:44px}
+.feature h3{font-size:1rem}
+.feature p{font-size:.85rem}
+.box{padding:18px}
+.contact-list a{font-size:1.1rem}
+footer .wrap{flex-direction:column;gap:8px}
+.page-title{padding-top:24px}
+.grid .card:last-child:nth-child(odd){grid-column:1/-1}
 }
+@media(max-width:720px){.features-3{grid-template-columns:1fr}}
